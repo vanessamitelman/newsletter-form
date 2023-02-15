@@ -1,1 +1,1 @@
-link to website: https://lesson4-vm.netlify.app/
+link to website: https://newsletter-form-vm.netlify.app
