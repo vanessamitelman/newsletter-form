@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanessa Mitelman</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <style>
+      body {
+        border-left: 8px solid #ffe01b;
+        padding: 0;
+        margin: 0;
+        background-image: url('./assets/flowers.png');
+        background-repeat: no-repeat;
+        font-family: arial;
+      }
+      .indent {
+        margin-top: 0;
+        margin-left: 5%;
+        font-weight: normal;
+      }
+      .large {
+        font-size: 3rem;
+        padding: 5px;
+      }
+      .footer {
+        padding: 3rem 0.3rem 0;
+      }
+      .form-text {
+        width: 80%;
+        margin: 2rem auto 1rem;
+      }
+      .material-icons {
+        color: #4ac7c7;
+      }
+      .tiny {
+        position: absolute;
+        left: 0px;
+        bottom: -2px;
+      }
+      .label {
+        display: block;
+        margin: 1rem 0 0.5rem;
+        text-transform: uppercase;
+        position: relative;
+      }
+      fieldset {
+        border-radius: 5px;
+        border: 3px dotted #4ac7c7;
+      }
+
+      label {
+        margin-left: 32px;
+      }
+      legend {
+        text-transform: uppercase;
+      }
+      hr {
+        margin: 1rem 0;
+      }
+      a {
+        color: #4ac7c7;
+      }
+      input {
+        width: 80%;
+        padding: 10px;
+      }
+      input[type='submit'] {
+        width: 84%;
+        margin: 1rem 0;
+        background-color: #ffe01a;
+        border: 3px dotted #b2b2b0;
+        border-radius: 5px;
+        font-size: 1.25rem;
+      }
+      input[type='submit']:hover {
+        background-color: #4ac7c7;
+        color: #fff;
+      }
+      input:focus-visible {
+        outline-offset: 0px;
+        outline-color: #ffe01a;
+      }
+      form {
+        background-color: white;
+        margin-bottom: 3rem;
+      }
+      form div {
+        margin-left: 10%;
+      }
+      @media screen and (min-width: 950px) {
+        body {
+          background-position: right 0% bottom 50%;
+          background-size: contain;
+          background-attachment: fixed;
+        }
+        iframe {
+          width: 52%;
+        }
+        form {
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 950px) {
+        body {
+          background-position: right 0% bottom 99%;
+          background-size: 150px;
+        }
+        iframe {
+          width: 92%;
+        }
+        form {
+          width: 88%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <i class="material-icons large">filter_vintage</i>
+    <h1 class="indent">Sign up for a Free Newsletter</h1>
+    <h3 class="indent">Create a free account</h3>
+    <form class="indent">
+      <fieldset>
+        <legend>Register:</legend>
+        <div>
+          <div class="label">
+            <i class="material-icons tiny">email</i>
+            <label for="email">Email</label>
+          </div>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+          />
+        </div>
+        <div>
+          <div class="label">
+            <i class="material-icons tiny">person_pin</i>
+            <label for="username">Username</label>
+          </div>
+
+          <input type="text" id="username" name="username" placeholder="Bob" />
+        </div>
+        <div>
+          <div class="label">
+            <i class="material-icons tiny">people</i>
+            <label for="age">Age (18-120)</label>
+          </div>
+
+          <input type="number" id="age" name="age" min="18" max="120" />
+        </div>
+        <div>
+          <div class="label">
+            <i class="material-icons tiny">date_range</i>
+            <label for="bday">Birthday</label>
+          </div>
+          <input type="date" id="bday" name="bday" />
+        </div>
+        <hr />
+        <div class="form-text">
+          By creating an account, you agree to our
+          <a href="https://policies.google.com/terms" target="_blank">Terms</a>
+          and have read and acknowledge the
+          <a href="https://policies.google.com/privacy" target="_blank"
+            >Global Privacy Statement</a
+          >.
+        </div>
+        <div><input type="submit" value="Submit" /></div>
+      </fieldset>
+    </form>
+    <div class="indent">
+      <iframe
+        height="315"
+        src="https://www.youtube.com/embed/QR-tZqiKCrg?controls=0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="footer">
+      <span>&copy;2001–2023 All Rights Reserved.</span>
+      <span>Vanessa Mitelman&reg; is a registered trademark</span>
+    </div>
+  </body>
+</html>
